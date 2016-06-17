@@ -1,0 +1,225 @@
+.section{
+    position: relative;
+    overflow: hidden;
+    &:nth-child(2n-1){
+        background-color: @index-color1;
+        color: @index-font-color1;
+    }
+    
+    &:nth-child(2n){
+        background-color: @index-color2;
+        color: @index-font-color2;
+    }
+    
+    .title{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .lard{
+        font-size: 16px;
+        text-indent: 2em;
+        margin-bottom: 2.5em;
+    }
+    
+    .btn{
+        .btn();
+        background-color: #FF4351;
+        color: #fff;
+    }
+}
+
+.section.section1{
+    
+    .text{
+        color: #fff;
+        position: absolute;
+        left: 8%;
+        top: 35%;  
+        z-index: 2;
+        max-width: 98%;
+        width: 600px;
+        text-align: center;
+    }
+    
+    .title{
+        opacity: 0;
+    }
+    
+    .lard{
+        opacity: 0;
+    }
+    
+    .btn{
+        opacity: 0;
+    }
+    
+    .pic{
+        width: 580px;
+        height: 430px;
+        background: url(../images/computer.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 5%;
+        top: 20%;
+        z-index: 1;
+        opacity: 0;
+    }
+    
+    
+}
+.section.section2{
+    
+    
+    .text{
+        position: absolute;
+        right: 10%;
+        top: 30%;
+        width: 600px;
+        max-width: 98%;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    .title{
+        opacity: 0;
+        .transform(translateX(300px));
+    }
+    
+    .lard{
+        opacity: 0;
+        .transform(translateX(-300px));
+    }
+    
+    .btn{
+        opacity: 0;
+        .transform(translateX(300px));
+    }    
+    
+    .pic{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: url(../images/file.png) no-repeat;
+        background-size: contain;
+        left: 10%;
+        top: 20%;
+        z-index: 1;
+        opacity: 0;
+        .transform(translateX(-300px));
+    }
+    
+    
+    
+}
+.section.section3{
+    
+   
+    .text{
+        position: absolute;
+        right: 10%;
+        top: 30%;
+        width: 600px;
+        max-width: 98%;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    .title{
+        opacity: 0;
+        .transform(translateY(50px));
+    }
+    
+    .lard{
+        opacity: 0;
+        .transform(translateY(50px));
+    }
+    
+    .btn{
+        opacity: 0;
+        .transform(translateY(50px));
+    } 
+    
+    .pic{
+        position: absolute;
+        left: 5%;
+        bottom: 0%;
+        background: url(../images/computer2.png) no-repeat;
+        background-size: contain;
+        width: 700px;
+        height: 400px;
+        z-index: 1;
+        
+        opacity: 0;
+        .transform(translateY(300px));
+    }
+    
+    
+}
+.section.section4{
+    
+    background-color: @index-color2;
+    
+    .text{
+        position: absolute;
+        top: 15%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    .img-box{
+        
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        right: 30%;
+        
+        div{
+            .border-box();
+            
+            padding: 10%;
+            width: 50%;
+            float: left;
+            
+            opacity: 0;
+            .transform( scale(0.5) );
+        }
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+    }
+    
+    .title{
+        opacity: 0;
+        .transform( scale(0.5) );
+    }
+    
+    .lard{
+        opacity: 0;
+        .transform( scale(0.5) );
+    }
+    
+    .btn{
+        opacity: 0;
+        .transform( scale(0.5) );
+    } 
+    
+    .pic{
+        position: absolute;
+        width: 281px;
+        height: 281px;
+        background: url(../images/people.png) no-repeat;
+        background-size: contain;
+        left: 10%;
+        bottom: 5%;
+        
+        opacity: 0;
+        .transform( scale(0.5) );
+    }
+    
+}
+

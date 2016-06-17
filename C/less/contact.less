@@ -1,0 +1,115 @@
+.contact{
+    margin-top: @nav-height;
+    width: 100%;
+    padding-bottom: 50px;
+    
+    .warp{
+        padding-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    h2.title{
+        text-align: center;
+        font-size: 36px;
+        color: #42E4d8;
+        margin-bottom: 30px;
+    }
+    .map{
+        width: 100%;
+        height: 380px;
+    }
+    
+    
+    .contact-box{
+        .margin-auto();
+        .clearfix();
+        width: @page-width;
+        
+        h3{
+            color: #42E4d8;
+            line-height: 1.5;
+            font-size: 1.7em;
+        }
+    }
+    
+    .contact-form{
+        float: left;
+        width: 100%/12*8;
+        
+        
+        input,textarea{
+            display: block;
+            margin: 15px;
+            margin-left: 0;
+            border-radius: 4px;
+        }
+        input{
+            width: 51%;
+            padding: 11px;
+            border: 1px solid #bbb;
+        }
+        textarea{
+            width: 80%;
+            padding: 11px;
+            height: 200px;
+        }
+        button{
+            color: #fff;
+            border-radius: 4px;
+            margin: 15px;
+            margin-left: 0;
+            font-size: 1.2em;
+            padding: 0.7em 1em;
+            display: inline-block;
+            width: 30%;
+            border: none;
+            cursor: pointer;
+            background-color: #666666;
+            
+            .transition(.5s);          
+            
+            &:hover{
+                background-color: #42E4d8;
+            }
+        }
+    }
+    
+    .contact-info{
+        width: 100%/12*4;
+        float: left;    
+        
+    }
+    
+    .info-list{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: @survey-font-color;
+        .clearfix();
+        dt{
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        dd{
+            text-indent: 1em;
+            line-height: 2;
+        }
+        
+    }
+    .image-box{
+        .border-box();
+        display: inline-block;
+        width: 45%;
+        margin: 5px;
+        padding: 20px;
+        
+        img{
+            width: 100%;
+            border: 1px solid #BBBBBB;
+        }
+        p{
+            text-align: center;
+            line-height: 2;
+        }
+    }
+}

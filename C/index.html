@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>河源计算机学会</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="icon" href="images/logo.ico"/>
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script src="js/velocity.min.js"></script>
+		<script src="js/velocity.ui.min.js"></script>
+		<script>
+		</script>
+		<!--[if lt IE 9]> 
+			window.location.href = './update.html'
+		<![endif]-->
+	</head>
+	<body>
+		<header class="header fixed">
+			<div class="warp">
+				<h1 class="logo"><img src="images/logo.png"/></h1>
+				<nav class="nav">
+					<div><a href="index.html">首页</a></div>
+					<div><a href="survey.html">学会简介</a></div>
+					<div><a href="news.html">新闻中心</a></div>
+					<div><a href="tech.html">技术中心</a></div>
+					<div><a href="contact.html">联系我们</a></div>
+				</nav>
+			</div>
+		</header>
+		<div class="main">
+			
+			<div class="section section1">
+				<div class="text">
+					<h2 class="title">欢迎来到河源计算机学会</h2>
+					<p class="lard">河源市计算机学会是由河源职业技术学院电子与信息工程学院牵头、经市民政部门批准成立、面向全市计算机及科研单位提供相关服务的社会团体，现有首批企业会员25 家，个人会员90人。</p>
+					<a href="" class="btn">了解更多</a>
+				</div>
+				<div class="pic"></div>
+			</div>
+			
+			<div class="section section2">
+				<div class="text">
+					<h2 class="title">新闻中心</h2>
+					<p class="lard">学会收集了业内最新最准确的新闻，带你了解业界最新的技术发展动向。</p>
+					<a href="news.html" class="btn">了解更多</a>
+				</div>
+				<div class="pic"></div>
+			</div>
+			
+			<div class="section section3">
+				<div class="text">
+					<h2 class="title">技术中心</h2>
+					<p class="lard">在这里，你可以接触到学会成员最新的研究成果。如果想学习最新的技术，请点击了解更多。</p>
+					<a href="tech.html" class="btn">了解更多</a>
+				</div>
+				<div class="pic"></div>
+			</div>
+			
+			<div class="section section4">
+				
+				<div class="text">
+					<h2 class="title">扫描关注我们</h2>
+					<p class="lard">如果你想了解更多关于学会的信息，请关注我们的微信或微博。</p>
+					
+					<div class="img-box">
+						<div>
+							<img src="./images/20150824150620_FiVQ3.jpeg" />
+							<p>关注微信公众号</p>
+						</div>	
+						<div>
+							<img src="./images/20150824150620_FiVQ3.jpeg" />
+							<p>关注微博</p>
+						</div>	
+					</div>
+				</div>
+				
+				<div class="pic"></div>
+				
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript">
+			(function($){
+				
+				var animateOption = {
+					duration:800
+				}
+				
+				//元素获取
+				var section1Dom = {
+					$section : $('.section1'),
+					$pic: $('.section1 .pic'),
+					$title: $('.section1 .title'),
+					$lard: $('.section1 .lard'),
+					$btn: $('.section1 .btn')
+				}
+				
+				var section2Dom = {
+					$section : $('.section2'),
+					$pic: $('.section2 .pic'),
+					$title: $('.section2 .title'),
+					$lard: $('.section2 .lard'),
+					$btn: $('.section2 .btn')
+				}
+				
+				var section3Dom = {
+					$section : $('.section3'),
+					$pic: $('.section3 .pic'),
+					$title: $('.section3 .title'),
+					$lard: $('.section3 .lard'),
+					$btn: $('.section3 .btn')
+				}
+				
+				var section4Dom = {
+					$section : $('.section4'),
+					$pic: $('.section4 .pic'),
+					$title: $('.section4 .title'),
+					$lard: $('.section4 .lard'),
+					$imageBox : $('.section4 .img-box div')
+				}
+				//进入动画
+				var enterAnimate = {
+					
+					1 : function(){
+						section1Dom.$pic.velocity({
+							"opacity": 1
+						},animateOption)
+						
+						section1Dom.$title.velocity({
+							"opacity": 1
+						},animateOption)
+						
+						section1Dom.$lard.velocity({
+							"opacity": 1
+						},animateOption)
+						
+						section1Dom.$btn.velocity({
+							"opacity": 1
+						},animateOption)
+					},
+					
+					2: function(){
+						var time = 100;
+						section2Dom.$pic.velocity({
+							"opacity":1,
+							translateX:["0px","-300px"]
+						},animateOption)
+						
+						section2Dom.$title.velocity({
+							"opacity":1,
+							translateX:["0px","300px"]
+						},{duration:800,delay:0*time})
+						
+						section2Dom.$lard.velocity({
+							"opacity":1,
+							translateX:["0px","-300px"]
+						},{duration:800,delay:2*time})
+						
+						section2Dom.$btn.velocity({
+							"opacity":1,
+							translateX:["0px","300px"]
+						},{duration:800,delay:3*time})
+
+					},
+					3: function(){
+						var time = 100;
+						section3Dom.$pic.velocity({
+							"opacity":1,
+							translateY:["0px","300px"]
+						},animateOption)
+						
+						section3Dom.$title.velocity({
+							"opacity":1,
+							translateY:["0px","-50px"]
+						},{duration:800,delay:0*time})
+						
+						section3Dom.$lard.velocity({
+							"opacity":1,
+							translateY:["0px","-50px"]
+						},{duration:800,delay:2*time})
+						
+						section3Dom.$btn.velocity({
+							"opacity":1,
+							translateY:["0px","-50px"]
+						},{duration:800,delay:3*time})
+					},
+					
+					4: function(){
+						var time = 100;
+						
+						section4Dom.$pic.velocity({
+							"opacity":1,
+							"scale":[1,0.5]
+						})
+						
+						section4Dom.$title.velocity({
+							"opacity":1,
+							"scale":[1,0.5]
+						},{duration:800,delay:1*time})
+						
+						section4Dom.$lard.velocity({
+							"opacity":1,
+							"scale":[1,0.5]
+						},{duration:800,delay:2*time})
+						
+						section4Dom.$imageBox.velocity({
+							"opacity":1,
+							"scale":[1,0.5]
+						},{duration:800,delay:3*time})
+					}
+				}
+				
+				//离开动画
+				var leaveAnimate = {
+					1: function(){
+						section1Dom.$pic.velocity('reverse',animateOption);
+						section1Dom.$title.velocity('reverse',animateOption);
+						section1Dom.$lard.velocity('reverse',animateOption);
+						section1Dom.$btn.velocity('reverse',animateOption);
+					},
+					2: function(){
+						section2Dom.$pic.velocity('reverse',animateOption);
+						section2Dom.$title.velocity('reverse',animateOption);
+						section2Dom.$lard.velocity('reverse',animateOption);
+						section2Dom.$btn.velocity('reverse',animateOption);
+					},
+					3: function(){
+						section3Dom.$pic.velocity('reverse',animateOption);
+						section3Dom.$title.velocity('reverse',animateOption);
+						section3Dom.$lard.velocity('reverse',animateOption);
+						section3Dom.$btn.velocity('reverse',animateOption);
+					},
+					4: function(){
+						section4Dom.$pic.velocity('reverse',animateOption);
+						section4Dom.$title.velocity('reverse',animateOption);
+						section4Dom.$lard.velocity('reverse',animateOption);
+						section4Dom.$imageBox.velocity('reverse',animateOption);
+					}
+				}
+				
+				
+				
+				$('.main').fullpage({
+					verticalCentered:false,
+					navigation:true,
+					navigationColor: "#fff",
+					keyboardScrolling:false,
+					paddingTop:80,
+					afterLoad: function(anchorLink ,index){
+						enterAnimate[index]&&enterAnimate[index]();
+					},
+					onLeave: function(index){
+						leaveAnimate[index]&&leaveAnimate[index]();
+					}
+					
+					
+				});
+				
+				
+			})(jQuery)
+		</script>
+	</body>
+</html>
