@@ -1,0 +1,123 @@
+.aboutUs{
+    
+    width: @page_width;
+    .marginAuto();
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid @border_color;
+    
+    h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .lead{
+        margin-bottom: 20px;
+    }
+    .message{
+        margin-bottom: 50px;
+        form{
+            .clearfix();
+            
+            .text-box{
+                .fl();
+                display: block;
+                width: 50%;
+                margin-bottom: 15px;
+                position: relative;
+                span{
+                    display: inline-block;
+                    padding-bottom: 5px;
+                    width: 55%;
+                }
+                i{
+                    font-style: normal;
+                    font-size: 14px;
+                }
+                input{
+                    width: 80%;
+                    height: 30px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 1px solid @border_color2;
+                }
+                
+            }
+            
+            i.error{
+                color: red;
+            }
+            .import{
+                color: red;
+                margin-right: 5px;
+            }
+            .textarea-box{
+                
+                display: block;
+                margin-bottom: 15px;
+                span{
+                    display: inline-block;
+                    padding-bottom: 5px;
+                    width: 55%;
+                }
+                i{
+                    font-size: 14px;
+                    font-style: normal;
+                }
+                textarea{
+                    
+                    .size(70%,150px);
+                    border-radius: 5px;
+                    border: 1px solid @border_color2;
+                    padding: 5px;
+                    display: block;
+                }
+            }
+            button[type=submit]{
+                .btn();
+                min-width: 100px;
+            }
+        }
+    }
+    
+    .contact-box{
+        .clearfix();
+        
+        .map-box{
+            .fr();
+            
+            p{
+                margin-bottom: 10px;
+                font-size: 18px;
+                
+                span{
+                    margin: 5px;
+                }
+            }
+        }
+        
+        .contact-list{
+            color: @link_color;
+            padding-top: 20px;
+            font-size: 18px;
+            li{
+                margin-bottom: 10px;
+                line-height: 30px;
+            }
+            p{
+                margin-right: 15px;
+                width: 130px;
+                text-align: right;
+                display: inline-block;
+            }
+            span{
+                vertical-align: middle;
+                margin: 5px;
+            }
+        }
+        #dituContent{
+            .size(550px,300px);
+        }
+        
+        
+    }
+}

@@ -1,0 +1,120 @@
+.survey{
+    
+    padding-top: 50px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid @border_color;
+    
+    .container{
+        .marginAuto();
+        width: @page_width;
+    }
+    
+    .survey-header{
+        
+        color: @link_color;
+        margin-bottom: 60px;
+        border-bottom: 1px solid @border_color;
+        .icon-box{
+            .size(100px,100px);
+            .marginAuto();
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 1px solid @border_color;
+            text-align: center;
+            line-height: 100px;
+            font-size: 50px;
+        }
+        h1{
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        p{
+            width: 80%;
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 40px;
+            text-indent: 2em;
+            .marginAuto();
+        }
+        
+    }
+    
+    .survey-body{
+        .btn-group{
+            font-size: 0;
+            text-align: center;
+            a{
+                font-size: 16px;
+                padding: 6px 12px;
+                border: 1px solid @border_color;  
+                display: inline-block;
+                margin-left: -1px;           
+                color: @btn_group_color;  
+                background-color: #FFFFFF;
+                &:first-child{
+                    border-radius: 5px 0 0 5px;
+                }
+                &:last-child{
+                    border-radius: 0 5px 5px 0 ;
+                }
+                &:hover,&.selected{
+                    color: #FFFFFF;  
+                    background-color: @btn_group_color;
+                    border: 1px solid @btn_group_color;  
+                }
+            }
+        }
+        
+        .context-box{
+            .marginAuto();
+            margin-top: 40px;
+            width: 90%;
+            color: @link_color;
+            .context{
+                display: none;
+                h2{
+                    text-align: center;
+                    margin-bottom: 25px;
+                }
+                p{
+                    text-indent: 2em;
+                    font-size: 14px;
+                }
+                
+                &:first-child{
+                    display: block;
+                }
+                
+                table{
+                    .marginAuto();
+                    width: 80%;
+                    border-collapse: collapse;
+                    border-radius: 5px;
+                    th{
+                        padding: 9px;
+                        color: #4078c0;
+                        border: 1px solid @border_color;  
+                    }
+                    
+                    tbody{
+                        tr:nth-child(2n-1){
+                            background-color: @table_bg_color;
+                        }
+                    }
+                    
+                    td{
+                        text-align: center;
+                        padding: 9px;
+                        border: 1px solid @border_color;  
+                        color: #333;
+                    }
+                }
+            }
+            
+            
+        }
+        
+    }
+    
+}

@@ -1,0 +1,165 @@
+.news{
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid @border_color;
+    .container{
+        .marginAuto();
+        width: @page_width;
+        
+        .news-body{
+            .clearfix();
+            color: @link_color;
+            
+            .left{
+                width: 75%;
+                padding-left: 10px;
+                padding-right: 10px;
+                .fl();
+                .border-box();
+                
+                h2{
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid @border_color;
+                    font-size: 20px;
+                    
+                    span{
+                        margin-left: 15px;
+                        margin-right: 10px;
+                        font-size: 26px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .article-info{
+                a{
+                    color:@link_color;
+                    
+                    &:hover{
+                        color: @link_hover_color;
+                    }
+                }
+                span{
+                    margin-left: 10px;
+                    margin-right: 5px;
+                }
+                time{
+                    font-size: 14px;
+                }
+                
+            }
+            .news-list{
+                margin-bottom: 40px;
+                li{
+                    position: relative;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid @border_color;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    .border-box();
+                    
+                    
+                    h3{
+                        margin-bottom: 10px;
+                        a{
+                            color:@link_hover_color;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .summary{
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                    }
+                    
+                }
+            }
+            
+            .article{
+                h3{
+                    text-align: center;
+                    padding-top: 40px;
+                    padding-bottom: 20px;
+                }
+                .article-info{
+                    text-align: center;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid @border_color;
+                }
+                .article-context{
+                    
+                    .marginAuto();
+                    width: 95%;
+                    
+                    
+                    p{
+                        text-indent: 2em;
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                    
+                }
+            }
+            
+            
+            .page{
+                .page();
+            }
+            
+            .right{
+                &.f{position: fixed;left: 880px;}
+                position: relative;
+                width: 25%;
+                max-width: 250px;
+                padding-left: 20px;
+                padding-right: 20px;
+                .border-box();
+                .fl();
+                
+                h2{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    span{
+                        margin-left: 15px;
+                        margin-right: 10px;
+                        font-size: 26px;
+                        vertical-align: middle;
+                    }
+                }
+                
+                .category-list{
+                    
+                    li{
+                        .w100();
+                        .border-box();
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 5px;
+                        &:hover{
+                            background-color: #eee;
+                        }
+                        &.active{
+                            background-color: @btn_color2;
+                            a{
+                                color: #FFFFFF;
+                            }
+                        }
+                        a{
+                            color: @link_color;
+                        }
+                    }
+                }
+                
+            }            
+        }
+
+    }
+    
+    
+}

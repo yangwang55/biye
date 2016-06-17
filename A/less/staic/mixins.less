@@ -1,0 +1,135 @@
+//常用的样式
+.fl(){
+    float: left;
+}
+.fr(){
+    float: right;
+}
+.clearfix(){
+    zoom:1; 
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+        height: 0;
+    } 
+}
+.marginAuto(){
+    margin-left: auto;
+    margin-right: auto;    
+}
+.w100(){
+    width: 100%;
+}
+.size(@width,@height){
+    width: @width;
+    height: @height;
+}
+
+
+
+
+
+//CSS3
+.border-box(){
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.linear(@color1,@color2){
+    background-image: -webkit-linear-gradient(top,@color1,@color2);
+       background-image: -moz-linear-gradient(top,@color1,@color2);
+        background-image: -ms-linear-gradient(top,@color1,@color2);
+            background-image: linear-gradient(top,@color1,@color2);
+}
+.box-shadow(@box-shadow){
+    -webkit-box-shadow: @box-shadow;
+    -moz-box-shadow: @box-shadow;
+    box-shadow: @box-shadow;
+}
+.transition(@transition) {
+  -webkit-transition: @transition;
+    -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+.animation(@animation){
+    -webkit-animation: @animation;
+       -moz-animation: @animation;
+        -ms-animation: @animation;
+            animation: @animation;    
+}
+
+
+.scale(@x:0, @y:0) {
+  -webkit-transform: scaleX(@x) scaleY(@y);
+     -moz-transform: scaleX(@x) scaleY(@y);
+      -ms-transform: scaleX(@x) scaleY(@y);
+       -o-transform: scaleX(@x) scaleY(@y);
+          transform: scaleX(@x) scaleY(@y);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//写好的样式
+.btn(){
+    border: solid 1px #25639c;
+    color: #FFFFFF;
+    padding: 7px 12px;
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: @btn_color2 ;
+    .linear(@btn_color1,@btn_color2);
+    
+    &:hover{
+        background-color: @btn_color1;
+        .linear(@btn_color2,@btn_color1);
+    }
+}
+.page(){
+    font-size: 0;
+    margin-left: 20px;
+    li{
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-right: -1px;
+        border: @border_color 1px solid;
+        
+        &:first-child{
+            border-radius: 5px 0 0 5px;
+        }
+        &:last-child{
+            border-radius:  0 5px 5px 0;
+        }
+        &:hover{
+            background-color: #eee;
+        }
+        &.selected{
+            background-color: @btn_color2;
+            a{
+                color: #FFFFFF;
+            }
+        }
+        
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: @link_color;
+        }
+    }
+    
+}
+         
