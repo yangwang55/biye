@@ -1,0 +1,324 @@
+	body{
+	-webkit-font-smoothing: antialiased;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+header.bar.bar-nav{
+	background-color: #0066CC;
+	color: #fff;
+}
+
+header.bar.bar-nav a{
+	color: #fff;
+}
+
+header.bar.bar-nav .title{
+	color: #FFFFFF;
+}
+
+.panel-nav-list li {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.banner.swiper-container {
+	background-color: #fff;
+	margin-bottom: 1rem;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.news,
+.tech {
+	background-color: #fff;
+	padding: 1px 0;
+}
+
+.news {
+	margin-bottom: 1rem;
+}
+
+.news-title,
+.tech-title {
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+.news-title:before,
+.tech-title:before{
+	content: '';
+	display: inline-block;
+	margin-right: 0.5rem;
+	width: 8px;
+	height: 25px;
+	background-color: #0894ec;
+	border-radius: 8px;
+	vertical-align: -5px;
+}
+
+.tech {
+	background-color: #fff;
+}
+
+.tech img {
+	width: 5rem;
+	max-height: 5rem;
+}
+
+#message-popup {
+	position: relative;
+}
+#message-popup .popup-title{ 
+	margin: 0;
+}
+#message-popup .popup-title,
+#about-us-popup .popup-title {
+	background-color: #fff;
+	top: 0.5rem;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+#message-popup .close-btn,
+#about-us-popup .close-btn {
+	position: absolute;
+	right: 20px;
+	top: 8px;
+	font-size: 30px;
+}
+
+.message-popup-box{
+	margin-top: 4rem;	
+}
+
+#about-us-popup h4{
+	margin-top: 4rem;
+	margin-bottom: -1rem;
+}
+#about-us-popup h4:before{
+	content: '';
+	display: inline-block;
+	margin-right: 0.5rem;
+	width: 8px;
+	height: 25px;
+	background-color: #0894ec;
+	border-radius: 8px;
+	vertical-align: -5px;	
+}
+
+.survey-content .content-block{
+	background-color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: -1.5rem;
+}
+
+.survey-content .content-block{
+	box-shadow: 0px 6px 8px -5px rgba(0,0,0,0.8);
+}
+
+.survey-content p{
+	text-indent: 2em;
+}
+
+.survey-content img{
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.5rem;
+}
+
+.event-table{
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 5px;
+	font-size: 12px;
+	margin-bottom: 1rem;
+}
+
+.event-table th{
+	color: #4078c0;
+	padding: 0.5rem;
+	border: 1px solid #DDDDDD;
+}
+.event-table td{
+	padding: 0.3rem;
+	text-align: center;
+	border: 1px solid #DDDDDD;
+}
+
+.event-table tbody tr:nth-child(odd){
+	background-color: #edf2f9;
+}
+
+.news-page-title {
+	padding-top: 0.5rem;
+	margin-bottom: -1.75rem;
+	background-color: #fff;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.news-content a{
+	display: block;
+	width: 100%;
+	color: #3d4145;
+}
+
+.page-btn-group{
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+	text-align: center;
+}
+
+.page-btn-group a{
+	display: inline-block;
+	width: 45%;
+}
+
+.news-content-page{
+}
+
+.news-content-page .title-box{
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.news-content-page .title-box h3{
+	margin-bottom: 0;
+}
+
+.news-content-page .title-box time{
+	display: inline-block;
+	width: 100%;
+	font-size: 14px;	
+	margin-top: -1rem;
+	color: #888888;
+}
+
+.news-content-page p{
+	text-indent: 2em;
+}
+
+.news-content-page img{
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.5rem;
+}
+
+.tech-page-title{
+	padding-top: 0.5rem;
+	margin-bottom: 0.75rem;
+	background-color: #fff;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.tech-list a{
+	color: #3d4145;
+}
+
+.tech-list .card-header{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666666;
+	display: block;
+}
+
+.tech-img{
+	width: 38%;
+	display: inline-block;
+}
+
+.tech-desc-box {
+	width: 53%;
+	max-height: 85px;
+	display: inline-block;
+	margin-left: 5%;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.sign-in-box{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+	overflow-y: auto;
+}
+
+.sign-in-box .logo{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.sign-in-box li{
+	margin-bottom: 1rem;
+}
+
+.sign-in-box label{
+	display: block;
+}
+
+.sign-in-box label span{
+	display: block;
+	font-size: 1rem;
+	text-indent: 1rem;
+	color: #404040;
+}
+
+.sign-in-box label i{
+	margin-left: 2rem;
+	font-size: 0.75rem;
+	font-style: normal;
+	display: block;
+	height: 18px;
+}
+
+.sign-in-box label i.error{
+	color: #FF0000;
+}
+
+.sign-in-box label i.success{
+	color: #4cd964;
+}
+
+.sign-in-box input[type=text],
+.sign-in-box input[type=password]{
+	display: block;
+	width: 95%;
+    margin: 5px auto 5px;
+    padding: 0 10px;
+    height: 50px;
+    color: #404040;
+    background: white;
+    border: 1px solid;
+    border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+    border-radius: 2px;
+    outline: 5px solid #eff4f7;
+    -moz-outline-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+#dituContent{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20rem;
+	margin-bottom: 1rem;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>河源计算机学会</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="icon" href="images/logo.ico"/>
+	<link rel="stylesheet" type="text/css" href="./css/sm.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+	<link rel="stylesheet" href="./css/sm-extend.min.css">
+	
+	<script type='text/javascript' src='./js/zepto_1.1.3.js'></script>
+	<script type='text/javascript' src="./js/sm.min.js"></script>
+	<script type='text/javascript' src='./js/sm-extend.min.js'></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+</head>
+<body>
+	<div class="page-group">
+		<div class="page">
+			<div class="sign-in-box">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png"/></a>
+				</div>
+				<div class="content-padded">
+			        <ul>
+			            <li>
+			            	<label>
+			            		<span>用户名：</span>
+			            		<input type="text" placeholder="用户名" required="required" name="username"/>
+			            		<i></i>
+			            	</label>
+			            </li>
+			            <li>
+			            	<label>
+			            		<span>密码：</span>
+			            		<input type="password" placeholder="密码" name="password"/>
+			            		<i></i>
+			            	</label>
+			            </li>
+			            <li>
+			            	<label>
+			            		<span>再次输入密码：</span>
+			            		<input type="password" placeholder="密码" name="determinePassword"/>
+			            		<i></i>
+			            	</label>
+			            </li>
+			        </ul>
+				    <div class="content-block">
+		                <a href="sign_in.html" class="button button-big button-fill button-success" id="register">注册</a>
+		                <p class="text-center">已有账号？<a href="sign_in.html" data-no-cache="true">点击此处登录</a></p>
+				    </div>
+				</div>
+			</div>
+			
+			
+			<script type="text/javascript">
+				$(function(){
+					$('#register').on('click',function(ev){
+						
+						var $username = $('input[name="username"]');
+						var $password = $('input[name="password"]');
+						var $determinePassword = $('input[name="determinePassword"]');
+						
+						var $usernameTip = $username.next('i');
+						var $passwordTip = $password.next('i');
+						var $determinePasswordTip = $determinePassword.next('i');
+						
+						if( $username.val().length < 3 ){
+							$usernameTip.removeClass().addClass('error');
+							$usernameTip.html( '用户名长度不得小于3位' );
+							return false;
+						}else{
+							$usernameTip.removeClass().addClass('success');
+							$usernameTip.html( '输入正确' );
+						}
+						
+						if( $password.val().length < 6 ){
+							$passwordTip.removeClass().addClass('error');
+							$passwordTip.html( '密码长度不得小于6位' );
+							return false;
+						}else{
+							$passwordTip.removeClass().addClass('success');
+							$passwordTip.html( '输入正确' );
+						}
+						
+						if( $determinePassword.val() != $password.val() ){
+							$determinePasswordTip.removeClass().addClass('error');
+							$determinePasswordTip.html( '请保持两次输入的密码一致' );
+							return false;
+						}else{
+							$determinePasswordTip.removeClass().addClass('success');
+							$determinePasswordTip.html( '输入正确' );
+						}
+					})
+				})
+			</script>
+		</div>
+	</div>
+	
+</body>
+</html>
